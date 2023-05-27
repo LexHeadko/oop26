@@ -33,10 +33,10 @@ public class Main {
     }
     public static void task3() {
         System.out.println("Task 3");
-        List<String> str = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
-        Set<Integer> setStr = new TreeSet<>();
-        for (Integer i = 0; i < str.size(); i++) {
-            setStr.add(Integer.valueOf(str.get(i)));
+        List<String> str = new ArrayList<>(List.of("один", "два","два", "три", "три", "три", "один", "один", "четыре"));
+        Set<String> setStr = new TreeSet<>();
+        for (String s : str) {
+            setStr.add(s);
         }
         System.out.print(setStr + " ");
     }

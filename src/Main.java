@@ -45,6 +45,16 @@ public class Main {
     }
     public static void task4() {
         System.out.println("Task 4");
-        List<String> str = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
+        List<String> words = new ArrayList<>(List.of("один", "два","два", "два","два", "два","два", "три", "три", "три"));
+        Map<String, Integer> map = new HashMap<>();
+        for (String word : words) {
+            if (map.containsKey(word)) {
+                Integer count = map.get(word) + 1;
+                map.put(word, count);
+            } else {
+                map.put(word, 1);
+            }
+        }
+        System.out.println(map.values());
     }
 }

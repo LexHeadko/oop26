@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -30,14 +31,20 @@ public class Main {
             setNums.add(nums.get(i));
         }
         System.out.print(setNums + " ");
+        System.out.println();
     }
     public static void task3() {
         System.out.println("Task 3");
         List<String> str = new ArrayList<>(List.of("один", "два","два", "три", "три", "три", "один", "один", "четыре"));
-        Set<String> setStr = new TreeSet<>();
+        Set<String> setStr = new HashSet<>();
         for (String s : str) {
             setStr.add(s);
         }
         System.out.print(setStr + " ");
+        System.out.println();
+    }
+    public static void task4() {
+        System.out.println("Task 4");
+        List<String> str = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
     }
 }
